@@ -1,11 +1,9 @@
-// import { Navbar, Nav} from 'react-bootstrap';
 import '../styles/navbar.css';
 import Logo from '../styles/img/logos.png'
 import Profile from '../styles/img/profile.png'
 import work from '../styles/img/work.png'
 import portfolio from '../styles/img/portfolio.png'
 import contact from '../styles/img/contact.png'
-
 import React from 'react';
 import {
   Collapse,
@@ -14,15 +12,17 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
+  NavLink
   } from 'reactstrap';
 import {styles} from '../styles/navbar.js';
+
 
   
   const navstyles ={
     backgroundColor : "#252526",
     height : 70,
-    width: "100%"
+    width: "100%",
+    
   }
 
   
@@ -67,10 +67,11 @@ import {styles} from '../styles/navbar.js';
       super(props);
       this.state = {
         isOpen: false,
-        value1:{...origin },
+        value1:{...origin, ...hover},
         value2:{...origin },
         value3:{...origin },
         value4:{...origin },
+        click: "pro" 
    
       };
 
@@ -92,14 +93,20 @@ import {styles} from '../styles/navbar.js';
         isOpen: !this.state.isOpen
       });
     }
+
     
     
     hover1(){
-      this.setState({value1:{...origin, ...hover }})
+      
+        this.setState({value1:{...origin, ...hover }})
+
+      
     }
     
     nothover1(){
-      this.setState({value1:{...origin}})
+      if (this.state.click !== "pro"){
+        this.setState({value1:{...origin}})
+      }  
     }
 
     hover2(){
@@ -129,7 +136,7 @@ import {styles} from '../styles/navbar.js';
     
 
     render() {
-      
+       
       return (
         <div>
           <Navbar style={navstyles} light expand="xl">
@@ -141,10 +148,11 @@ import {styles} from '../styles/navbar.js';
                <div style={div}>
                 <NavItem>
                   <NavLink 
-                    href="#Profile"
+                    href="/"
                     style={this.state.value1}
                     onMouseEnter ={this.hover1}
-                    onMouseLeave ={this.nothover1}
+                    onMouseLeave ={this.nothover1} 
+                    onClick={this.click} 
                   > <img style={img} src={Profile} />Profile
                   </NavLink>
                 </NavItem>  
@@ -153,7 +161,7 @@ import {styles} from '../styles/navbar.js';
                 <div style={div}>
                 <NavItem>
                   <NavLink 
-                    href="#Experience"
+                    href="/Ex"
                     style={this.state.value2}
                     onMouseEnter ={this.hover2}
                     onMouseLeave ={this.nothover2}
@@ -192,15 +200,9 @@ import {styles} from '../styles/navbar.js';
 
              
 
-          <section>
-    		<h1>Hi, <br/>I'm Mohamad,<br/>Web Developer</h1> 
-    		<h2>Front-End Developer / Back-End Developer</h2>
-    		<button class="btn">Primary</button>
-
-    	</section>
-         
-
-        </div>
+   
+      
+          </div>
       );
     }
   }
