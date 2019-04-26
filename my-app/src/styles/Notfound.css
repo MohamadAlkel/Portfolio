@@ -1,0 +1,39 @@
+.topSpacenot  {
+  margin-top: 70px;
+}
+
+.warp{
+ 
+
+  position: relative;
+  text-align: center;
+  height: 70vh;
+  width: 90vw;
+  padding: auto;
+  margin: auto
+  /* padding-left: 50vw */
+  
+}
+
+.error {
+  position: absolute;
+  top:0vh;
+  left:30vw;
+  font-size : 250px;
+  color: #de4141;
+  font-weight: bold;
+  font-family: arial;
+  /* text-align: center; */
+  
+}
+
+.errorTwo{
+  
+  position: absolute;
+  top:350px;
+  left:15vw;
+  font-size : 35px;
+   text-align: center;
+  color: #fff;
+  font-family: arial;
+}

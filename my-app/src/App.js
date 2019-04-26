@@ -1,7 +1,7 @@
 
 import './styles/navbar.css';
 import Logo from './styles/img/logos.png'
-import Profile from './styles/img/profile.png'
+import Profile_img from './styles/img/profile.png'
 import work from './styles/img/work.png'
 import portfolio from './styles/img/portfolio.png'
 import contact from './styles/img/contact.png'
@@ -17,9 +17,9 @@ import {
 
 import React, { Component } from 'react';
 import './App.css';
-import  Home  from './pages/Home';
+import  Profile  from './pages/Profile';
 import  Ex  from './pages/Ex';
-import Notfound  from "./pages/Notfound "
+import Notfound  from "./pages/Notfound"
 import {
   Route,
   NavLink,
@@ -27,12 +27,6 @@ import {
   Switch,
 } from 'react-router-dom'
 
-
-// const navstyles ={
-//   backgroundColor : "#252526",
-//   height : 70,
-//   width: "100%"
-// }
 
 
 
@@ -67,6 +61,7 @@ class App extends Component {
   render() {
       let navbaritem = "onenav "
       if(this.state.isOpen){navbaritem += "open"} 
+
     return (
       <Router>
       <div className="App">
@@ -85,7 +80,7 @@ class App extends Component {
                     // style={this.state.value1}
                     // onMouseEnter ={this.hover1}
                     // onMouseLeave ={this.nothover1} 
-                  > <img className="imges" src={Profile} />Profile
+                  > <img className="imges" src={Profile_img} />Profile
                   </NavLink>
                 </NavItem>  
                 </div>
@@ -137,17 +132,10 @@ class App extends Component {
           </Navbar>
 
       
-
-
-
-
-
-
-      
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Profile} />
           <Route path="/Experience" component={Ex} />
-          <Route  component={Notfound } />
+          <Route  component={Notfound} />
         </Switch>
 
       </div>
