@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import '../styles/profile.css';
-import pdf from '../styles/img/MohamadAlkel.pdf'
+import pdf from '../styles/img/MohamadAlkel.pdf';
+
 
 
 
@@ -33,8 +34,6 @@ class Profile extends Component {
 
 
               <div  className="col-xl-6 profiles">
-       
-    
                   <h1 ><span className="file"><span className="oring" >▣  </span>Profile </span></h1> 
                   <h5 className="text">I am a hands-on UI/UX Designer and a Web Developer who is passionate about
                   developing experiences based on insights of real customer needs, has the craft to
