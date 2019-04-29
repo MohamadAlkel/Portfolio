@@ -18,6 +18,7 @@ import './App.css';
 import  Profile  from './pages/Profile';
 import  Ex  from './pages/Ex';
 import  Contact  from './pages/Contact';
+import  Portfolio  from './pages/Portfolio';
 import Notfound  from "./pages/Notfound"
 import {
   Route,
@@ -105,6 +106,7 @@ class App extends Component {
             <Route exact path="/" component={Profile} />
             <Route path="/Experience" component={Ex} />
             <Route path="/Contact" component={Contact} />
+            <Route path="/Portfolio" component={Portfolio} />
             <Route  component={Notfound} />
           </Switch>
 
