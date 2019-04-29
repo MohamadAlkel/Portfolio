@@ -1,21 +1,11 @@
 import '../styles/navbar.css';
 import '../styles/ex.css';
 import Cert from '../styles/img/cert.png'
-
-
 import React from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  Progress
-  } from 'reactstrap';
+import { Progress } from 'reactstrap';
   
   
   export default class Navbars extends React.Component {
-
 
     render() {
       
@@ -24,36 +14,44 @@ import {
           <div className=" row topSpaceEx">
             <div className="col-xl-6 leftSpace">
 
-                <div className="row">
-                  <h1 className="textTitle">Experience & Education</h1>
-                </div>
               <div className="row">
-                <div className="leftspaceTwo">
-                  <div className="ex">
-                    <p className="exText">
-                      Full-Stack developer at NEXT Academy | Mar 2019 – May 2019 |
-                      <p className="exTextOne">Kuala Lumpur, Malaysia</p>
-                    </p>
+                <h1 className="textTitle">Experience & Education</h1>
+              </div>
+
+              <div className="row">
+              
+                  <div className="leftspaceTwo">
+
+                    <div className="ex">
+                      <p className="exText">
+                        Full-Stack developer at NEXT Academy | Mar 2019 – May 2019 |
+                        <p className="exTextOne">Kuala Lumpur, Malaysia</p>
+                      </p>
+                    </div>
+
+                    <div className="ex">
+                      <p className="exText">
+                      Freelance Web Developer | Nov 2017 – Present |
+                        <p className="exTextOne">Kuala Lumpur, Malaysia</p>
+                      </p>
+                    </div>
+
+                    <div className="ex">
+                      <p className="exText">
+                        UI UX Designer at -99 Design Studio| May 2017 – Oct 2018 |
+                        <p className="exTextOne">Kuala Lumpur, Malaysia</p>
+                      </p>
+                    </div>
+
+                    <div className="ex">
+                      <p className="exText">
+                        Architect Trainer | Nov 2017 – Apr 2018 |
+                        <p className="exTextOne">Kuala Lumpur, Malaysia</p>
+                      </p>               
+                    </div>
+
                   </div>
-                  <div className="ex">
-                    <p className="exText">
-                    Freelance Web Developer | Nov 2017 – Present |
-                      <p className="exTextOne">Kuala Lumpur, Malaysia</p>
-                    </p>
-                  </div>
-                  <div className="ex">
-                    <p className="exText">
-                      UI UX Designer at -99 Design Studio| May 2017 – Oct 2018 |
-                      <p className="exTextOne">Kuala Lumpur, Malaysia</p>
-                    </p>
-                  </div>
-                  <div className="ex">
-                    <p className="exText">
-                      Architect Trainer | Nov 2017 – Apr 2018 |
-                      <p className="exTextOne">Kuala Lumpur, Malaysia</p>
-                    </p>               
-                  </div>
-                </div>
+
               </div>
 
               <div className="row">
@@ -62,7 +60,7 @@ import {
                   <div className="certs">                 
                       <p className="certText">
                         <b>
-                        <img height="20px"  src={Cert} /> Full-Stack developer
+                        <img height="20px"  src={Cert} alt="img" /> Full-Stack developer
                         </b> <br/> 
                         from Next Academy
                       </p>                          
@@ -73,7 +71,7 @@ import {
                   <div className="certs">                 
                       <p className="certText">
                         <b>
-                        <img height="20px"  src={Cert} /> Front End Developer 
+                        <img height="20px"  src={Cert} alt="img" /> Front End Developer 
                         </b> <br/> 
                         from Udacity
                       </p>                          
@@ -84,7 +82,7 @@ import {
                   <div className="certs">                 
                       <p className="certText">
                         <b>
-                        <img height="20px"  src={Cert} /> Training in HTML & CSS
+                        <img height="20px"  src={Cert} alt="img"/> Training in HTML & CSS
                         </b> <br/> 
                         from New Horizons
                       </p>                          
@@ -95,7 +93,7 @@ import {
                   <div className="certs">                 
                       <p className="certText">
                         <b>
-                        <img height="20px"  src={Cert} /> B.S. Architectural 
+                        <img height="20px"  src={Cert} alt="img" /> B.S. Architectural 
                         </b> <br/> 
                         from YPU
                       </p>                          
@@ -106,54 +104,13 @@ import {
 
             </div>
 
-            {/* <div className="col-xl-1 ">
-                
-                  <div className=" leftSpace"> 
-                    <div className="certs">                 
-                        <p className="certText">
-                          <b>
-                          <img height="20px"  src={Cert} /> Full-Stack developer
-                          </b> <br/> 
-                          from Next Academy
-                        </p>                          
-                    </div>
-
-                    <div className="certs">                 
-                        <p className="certText">
-                          <b>
-                          <img height="20px"  src={Cert} /> Front End Developer 
-                          </b> <br/> 
-                          from Udacity
-                        </p>                          
-                    </div>
-
-                    <div className="certs">                 
-                        <p className="certText">
-                          <b>
-                          <img height="20px"  src={Cert} /> Training in HTML & CSS
-                          </b> <br/> 
-                          from New Horizons
-                        </p>                          
-                    </div>
-
-                    <div className="certs">                 
-                        <p className="certText">
-                          <b>
-                          <img height="20px"  src={Cert} /> B.S. Architectural 
-                          </b> <br/> 
-                          from YPU
-                        </p>                          
-                    </div>
-                  </div>
-                
-            </div> */}
 
             <div className="col-xl-1 leftSpace "><div className="borders"></div></div>
 
             <div className="col-xl-2 leftSpace borders">
-               <div className="row">
-                  <h1 className="textTitle">Skills</h1>
-                </div>
+              <div className="row">
+                <h1 className="textTitle">Skills</h1>
+              </div>
 
               <div className="leftSpace">
               <div className="skills ">
@@ -229,9 +186,7 @@ import {
               </div>
 
             </div>
-            
-          
-
+  
           </div>
         </>
       );

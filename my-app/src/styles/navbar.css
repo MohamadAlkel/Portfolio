@@ -20,8 +20,6 @@ body{
    font-size :21px;
    transition:  1000ms;
    font-family: arial;
-   /* margin-right: 6px; */
-   /* border-bottom: 3px solid #007bff00; */
    text-decoration: none;
 }
 
@@ -103,6 +101,5 @@ div.onenav {
    height: 100px;
    background-color: #252526;
    width: 100%;
-   /* padding: 10px; */
    margin: auto
 }

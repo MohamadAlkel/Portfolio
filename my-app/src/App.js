@@ -54,7 +54,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Navbar className="navstyle" light expand="xl">
-            <NavbarBrand href="/">  <img src={Logo} height="32px"/> </NavbarBrand>
+            <NavbarBrand href="/">  <img src={Logo} height="32px" alt="img"/> </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse className="" isOpen={this.state.isOpen} navbar>
                   <Nav className="ml-auto smallnavbar" navbar>
@@ -64,7 +64,7 @@ class App extends Component {
                         exact  to="/"
                         activeClassName="active"
                         className="navitem" 
-                      > <img className="imges" src={Profile_img} />Profile
+                      > <img className="imges" src={Profile_img} alt="img" />Profile
                       </NavLink>
                     </NavItem>  
                     </div>
@@ -74,7 +74,7 @@ class App extends Component {
                         to="/Experience"
                         activeClassName="active"
                         className="navitem blue"
-                      > <img className="imges" src={work} />Experience
+                      > <img className="imges" src={work} alt="img"/>Experience
                       </NavLink>
                     </NavItem>
                     </div>
@@ -84,7 +84,7 @@ class App extends Component {
                         to="/Portfolio"
                         activeClassName="active"
                         className="navitem green"
-                      > <img className="imges" src={portfolio} />Portfolio
+                      > <img className="imges" src={portfolio} alt="img" />Portfolio
                       </NavLink>
                     </NavItem>
                     </div>
@@ -94,7 +94,7 @@ class App extends Component {
                         to="/Contact"
                         activeClassName="active"
                         className="navitem pink"
-                      > <img className="imges" src={contact} />Contact
+                      > <img className="imges" src={contact} alt="img" />Contact
                       </NavLink>
                     </NavItem>
                     </div> 
