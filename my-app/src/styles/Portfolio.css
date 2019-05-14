@@ -30,10 +30,97 @@
     transition: 1000ms;    
 }
 
+.flip{
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: transparent;
+    width: 100%;
+}
+
+.flip-card{
+    width:400px;
+    height:250px;
+    /* overflow: hidden; */
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    background-color: transparent;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: 40px 0;
+}
+
+.flip-card-inner{
+    position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+
 .btns:hover{
     border: 3px solid #fc6ac1;
     background-color: #fc6ac1;
 }
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    
+  }
+
+  .imgFlip{
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #fc6ac1;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  .btnFlip{
+      color:#fc6ac1;
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 5px 10px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 0;
+      border: 2px solid rgba(255, 255, 255, 0);
+  }
+
+  .btnFlip:hover{
+    color:#fff;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 2px solid #fff;
+}
+
+  
 
 .top{
     margin-bottom:0;
