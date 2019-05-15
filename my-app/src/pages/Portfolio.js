@@ -22,7 +22,7 @@ class Profile extends Component {
     return (
     <div>
       
-      <CardColumns  className="topSpace ml-4 mr-4">    
+      <CardColumns  className="topSpaceFlip ml-4 mr-4">    
       
 
 
@@ -38,8 +38,8 @@ class Profile extends Component {
               <CardSubtitle className="textCard pl-3 mt-2"> Front-end dev</CardSubtitle>
               <CardSubtitle className="textCard pl-3 mt-2"> Back-end dev</CardSubtitle>
            
-              <Button href="https://foody-recipe.herokuapp.com/Favorite" target="_blank" className="btnFlip m-3">
-                See all Project
+              <Button href="https://foody-recipe.herokuapp.com" target="_blank" className="btnFlip m-3">
+                See Project
               </Button>
             </div>
           </div>
@@ -60,7 +60,7 @@ class Profile extends Component {
               <CardSubtitle className="textCard pl-3 mt-2"> UI UX Design</CardSubtitle>
               <CardSubtitle className="textCard pl-3 mt-2"> Front-end dev</CardSubtitle>
               <Button href="/" target="_blank" className="btnFlip m-3">
-                See all Project
+                See Project
               </Button>
             </div>
           </div>
@@ -78,7 +78,7 @@ class Profile extends Component {
               <CardSubtitle className="textCard pl-3 mt-2"> UI UX Design</CardSubtitle>
            
               <Button href="https://www.behance.net/gallery/69392387/YUMMY" target="_blank" className="btnFlip m-3">
-                See all Project
+                See Project
               </Button>
             </div>
           </div>
@@ -97,7 +97,7 @@ class Profile extends Component {
               <CardSubtitle className="textCard pl-3 mt-2"> UI UX Design</CardSubtitle>
             
               <Button href="https://www.behance.net/gallery/71899325/Redesign-LAZADA" target="_blank" className="btnFlip m-3">
-                See all Project
+                See Project
               </Button>
             </div>
           </div>
@@ -115,7 +115,7 @@ class Profile extends Component {
               <CardSubtitle className="textCard pl-3 mt-2"> UI UX Design</CardSubtitle>
             
               <Button href="https://www.behance.net/gallery/71292473/IPLACE" target="_blank" className="btnFlip m-3">
-                See all Project
+                See Project
               </Button>
             </div>
           </div>
@@ -133,7 +133,7 @@ class Profile extends Component {
               <CardSubtitle className="textCard pl-3 mt-2"> UI UX Design</CardSubtitle>
              
               <Button href="https://www.behance.net/gallery/70379393/MUEBLE-GLLERY" target="_blank" className="btnFlip m-3">
-                See all Project
+                See Project
               </Button>
             </div>
           </div>
@@ -151,7 +151,7 @@ class Profile extends Component {
               <CardSubtitle className="textCard pl-3 mt-2"> UI UX Design</CardSubtitle>
              
               <Button href="https://www.behance.net/gallery/72999029/Daily-Tasks" target="_blank" className="btnFlip m-3">
-                See all Project
+                See Project
               </Button>
             </div>
           </div>
@@ -169,7 +169,7 @@ class Profile extends Component {
               <CardSubtitle className="textCard pl-3 mt-2"> UI UX Design</CardSubtitle>
  
               <Button href="https://www.behance.net/gallery/72807405/Redesign-Jubba-airways" target="_blank" className="btnFlip m-3">
-                See all Project
+                See Project
               </Button>
             </div>
           </div>
@@ -187,7 +187,7 @@ class Profile extends Component {
               <CardSubtitle className="textCard pl-3 mt-2"> UI UX Design</CardSubtitle>
 
               <Button href="https://www.behance.net/gallery/72798271/Wushoo" target="_blank" className="btnFlip m-3">
-                See all Project
+                See Project
               </Button>
             </div>
           </div>
